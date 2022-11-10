@@ -10,12 +10,15 @@
     <script>
         let a=prompt("nhập số a")
         let b=prompt("nhập số b")
-        if (a % b ==0){
+        if (a % b ==0 && b!==0){
             alert(a+' chia hết cho '+b)
         }
-        else {
-            alert(a +' không chia hết cho '+b)
+        else if (b==0){
+            alert('Bạn đã nhập sai, vui lòng nhập lại')
         }
+             else {
+            alert(a +' không chia hết cho '+b)
+                  }
     </script>
 </body>
 </html>
