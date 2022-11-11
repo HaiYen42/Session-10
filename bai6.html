@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Caculator</h1>
+    <input type="text" id="so1">
+    <input type="text" id="so2"> <br>
+    <button type="button" onclick="myFunction1()">Addition(+)</button>
+    <button type="button" onclick="myFunction2()">Subtraction(-)</button>
+    <button type="button" onclick="myFunction3()">Multiplication(X)</button>
+    <button type="button" onclick="myFunction4()">Division(/)</button><br> <br>
+    <div id="result"></div> 
+    <script>
+        function myFunction1 (){
+            let a=parseInt(document.getElementById("so1").value)
+            let b=parseInt(document.getElementById("so2").value)
+            document.getElementById("result").innerHTML=a+b
+        }
+        function myFunction2 (){
+            let a=parseInt(document.getElementById("so1").value)
+            let b=parseInt(document.getElementById("so2").value)
+            document.getElementById("result").innerHTML=a-b
+        }
+        function myFunction3 (){
+            let a=parseInt(document.getElementById("so1").value)
+            let b=parseInt(document.getElementById("so2").value)
+            document.getElementById("result").innerHTML=a*b
+        }
+        function myFunction4 (){
+            let a=parseInt(document.getElementById("so1").value)
+            let b=parseInt(document.getElementById("so2").value)
+            document.getElementById("result").innerHTML=a/b
+        }
+    </script>
+</body>
+</html>

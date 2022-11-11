@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="#">Amount</label>
+    <input type="text" id="amount">
+    <label for="#">From Currency</label>
+    <select name="#" id="from">
+        <option value="VND">VietNam</option>
+        <option value="USD">USD</option>
+    </select>
+    <label for="#">To Currency</label>
+    <select name="#" id="to">
+        <option value="USD">USD</option>
+        <option value="VND">VND</option>
+    </select>
+    <button type="button" onclick="MyFunction()">Convert</button>
+    <div id="result"></div>
+    <script>
+        function MyFunction() {
+            let a=parseInt(document.getElementById("amount").value)
+            let from=(document.getElementById("from").value)
+            let to=(document.getElementById("to").value)
+            if (from=="VND" && to=="USD" ){
+                document.getElementById("result").innerHTML=a/24000 + "$"
+            }
+            else if(from=="USD" && to=="VND"){
+                document.getElementById("result").innerHTML=a*24000 + "VND"
+            }
+            else {
+                alert("Chọn lại loại tiền")
+            }
+
+        }
+    </script>
+</body>
+</html>
