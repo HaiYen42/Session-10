@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <script>
+    <!-- <script>
       // let year=parseInt(prompt("nhập năm"))
       // let leapyear=false;
       //     if (year%4==0){
@@ -35,6 +35,19 @@
         alert(year + "là năm nhuận");
       } else {
         alert(year + " ko là năm nhuận");
+      }
+    </script> -->
+
+    <script>
+      let year=parseInt(prompt("Nhập năm"))
+      if(
+        (year % 4== 0 && year % 100 != 0)||
+        (year % 100==0 && year % 400 == 0)
+      ){
+        alert(year + " là năm nhuận")
+      }
+      else{
+        alert(year + " ko phải là năm nhuận")
       }
     </script>
   </body>
